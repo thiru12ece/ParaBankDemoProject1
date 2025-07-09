@@ -3,14 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.RequestLoanTest">
+      <class name="tests.AccountTest">
         <methods>
+          <include name="loginIfNeeded"/>
+          <include name="afterClass"/>
+          <include name="flushExtentReport"/>
+          <include name="globalTeardown"/>
+          <include name="startExtentReport"/>
+          <include name="viewSavingsAccountSummary"/>
+          <include name="startExtentTest"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testLoanExceedingLimit"/>
-          <include name="setUpPages"/>
+          <include name="globalSetup"/>
         </methods>
-      </class> <!-- tests.RequestLoanTest -->
+      </class> <!-- tests.AccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

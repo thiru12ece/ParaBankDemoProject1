@@ -1,43 +1,41 @@
 package base;
 
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.*;
-
-import utils.DriverFactory;
-import utils.ExtentManager;
-import utils.Log;
-import utils.ConfigReader;
-import pages.LoginPage;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import org.testng.annotations.*;
+import utils.ExtentManager;
+import utils.ExtentTestManager;
+import utils.Log;
 
-public class BaseTest {
-    protected WebDriver driver;
-    protected ExtentReports extent = ExtentManager.getInstance();
-    protected ExtentTest test;
+import java.lang.reflect.Method;
 
-    @Parameters("browser")
-    @BeforeClass
-    public void setUp(@Optional("chrome") String browser) {
-        driver = DriverFactory.initDriver(browser);
+public class BaseTest extends TestBaseSuite {  // ✅ gets driver from parent
+
+    private static ExtentReports extent;
+
+    @BeforeSuite(alwaysRun = true)
+    public void startExtentReport() {
+        extent = ExtentManager.getInstance();
+    }
+
+    @BeforeClass(alwaysRun = true)
+    public void startLog() {
         Log.startTestCase(this.getClass().getSimpleName());
-        String baseUrl = ConfigReader.getProperty("baseUrl");
-        driver.get(baseUrl);
-        // 🛑 Skip login for LoginTest class
-        if (!this.getClass().getSimpleName().equals("LoginTest")) {
-            performLogin();
-        }
     }
 
-    public void performLogin() {
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.login("john", "demo");
+    @BeforeMethod(alwaysRun = true)
+    public void createExtentTest(Method method) {
+        ExtentTest test = extent.createTest(method.getDeclaringClass().getSimpleName() + " :: " + method.getName());
+        ExtentTestManager.setTest(test);
     }
 
-    @AfterClass
-    public void tearDown() {
+    @AfterClass(alwaysRun = true)
+    public void endLog() {
         Log.endTestCase();
-        DriverFactory.quitDriver();
+    }
+
+    @AfterSuite(alwaysRun = true)
+    public void flushReport() {
+        extent.flush();
     }
 }

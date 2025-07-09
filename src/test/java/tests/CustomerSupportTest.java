@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.CustomerSupportPage;
+import utils.ExtentTestManager;
 
 public class CustomerSupportTest extends BaseTest {
 
@@ -17,22 +18,34 @@ public class CustomerSupportTest extends BaseTest {
 
     @Test
     public void testSubmitFormWithValidDetails() {
-    	supportPage.navigateToCustomerSupport();
+        ExtentTestManager.getTest().info("Submitting form with valid data");
         supportPage.submitSupportForm("John Doe", "john@example.com", "Loan Issue", "I need help with my loan status.");
-        Assert.assertTrue(supportPage.isSuccessMessageDisplayed(), "Success message should be shown.");
+
+        Assert.assertTrue(
+            supportPage.isSuccessMessageDisplayed(),
+            "Expected success message after submitting valid support request."
+        );
     }
 
     @Test
     public void testSubmitFormWithEmptyFields() {
-    	supportPage.navigateToCustomerSupport();
+        ExtentTestManager.getTest().info("Submitting form with empty fields");
         supportPage.submitSupportForm("", "", "", "");
-        Assert.assertTrue(supportPage.isValidationErrorDisplayed(), "Validation message should be displayed.");
+
+        Assert.assertTrue(
+            supportPage.isValidationErrorDisplayed(),
+            "Expected validation error for empty form submission."
+        );
     }
 
     @Test
     public void testVerifySuccessMessage() {
-    	supportPage.navigateToCustomerSupport();
+        ExtentTestManager.getTest().info("Submitting form for password reset request");
         supportPage.submitSupportForm("Jane", "jane@example.com", "Password Reset", "I forgot my password.");
-        Assert.assertTrue(supportPage.isSuccessMessageDisplayed(), "Confirmation should be displayed.");
+
+        Assert.assertTrue(
+            supportPage.isSuccessMessageDisplayed(),
+            "Expected confirmation message after successful form submission."
+        );
     }
 }

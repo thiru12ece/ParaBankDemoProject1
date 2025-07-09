@@ -3,11 +3,12 @@ package tests;
 import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.RequestLoanPage;
+import utils.ExtentTestManager;
 
 public class RequestLoanTest extends BaseTest {
-
 
     private RequestLoanPage requestLoanPage;
 
@@ -16,27 +17,38 @@ public class RequestLoanTest extends BaseTest {
         requestLoanPage = new RequestLoanPage(driver);
     }
 
+    @BeforeMethod
+    public void goToRequestLoanPage() {
+        requestLoanPage.navigateToRequestLoan();
+        ExtentTestManager.getTest().info("Navigated to Request Loan page");
+    }
+
     @Test
     public void testValidLoanRequest() {
-    	requestLoanPage.navigateToRequestLoan();
+        ExtentTestManager.getTest().info("Submitting valid loan request: $5000 with $1000 down payment to account 13344");
         requestLoanPage.requestLoan("5000", "1000", "13344");
-        Assert.assertTrue(requestLoanPage.isLoanApproved(), "Approved");
-        Assert.assertTrue(requestLoanPage.isLoanApprovedMsg(), "Congratulations, your loan has been approved.");
+
+        ExtentTestManager.getTest().info("Checking loan approval status and confirmation message");
+        Assert.assertTrue(requestLoanPage.isLoanApproved(), "Loan should be approved");
+        Assert.assertTrue(requestLoanPage.isLoanApprovedMsg(), "Confirmation message should be displayed");
     }
 
     @Test
     public void testMissingLoanDetails() {
-    	requestLoanPage.navigateToRequestLoan();
+        ExtentTestManager.getTest().info("Submitting loan request with missing fields");
         requestLoanPage.requestLoan("", "", "");
-        Assert.assertTrue(requestLoanPage.isValidationErrorShown(), "An internal error has occurred and has been logged.");
+
+        ExtentTestManager.getTest().info("Verifying error message for missing data");
+        Assert.assertTrue(requestLoanPage.isValidationErrorShown(), "Validation error should be shown for empty inputs");
     }
 
     @Test
     public void testLoanExceedingLimit() {
-    	requestLoanPage.navigateToRequestLoan();
+        ExtentTestManager.getTest().info("Submitting high loan request: $1000000 with $500 down payment");
         requestLoanPage.requestLoan("1000000", "500", "13344");
-        Assert.assertTrue(requestLoanPage.isLoanRejected(), "Denied");
-        Assert.assertTrue(requestLoanPage.isLoanRejectedMsg(), "We cannot grant a loan in that amount with your available funds.");
-    }
 
+        ExtentTestManager.getTest().info("Checking loan rejection and proper rejection message");
+        Assert.assertTrue(requestLoanPage.isLoanRejected(), "Loan should be rejected");
+        Assert.assertTrue(requestLoanPage.isLoanRejectedMsg(), "Rejection message should be displayed");
+    }
 }

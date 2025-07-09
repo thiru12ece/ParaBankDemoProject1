@@ -5,29 +5,46 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AccountPage;
+import utils.ExtentTestManager;
 
 public class AccountTest extends BaseTest {
 
-    AccountPage accountPage;
-    
-    @BeforeClass
+    private AccountPage accountPage;
+
+    @BeforeClass(alwaysRun = true)
     public void setUp() {
-        // Example assuming you already have 'driver' from BaseTest
-        accountPage = new AccountPage(driver);  // ✅ Initialize it here
+        accountPage = new AccountPage(driver); // ✅ ThreadLocal-safe driver
     }
 
     @Test
     public void viewCheckingAccountSummary() throws InterruptedException {
+    	
+        ExtentTestManager.getTest().info("Viewing CHECKING account summary");
+
+        accountPage.navigateToAccountsOverview();
+        
         accountPage.selectAccountByType("CHECKING");
-        Assert.assertTrue(accountPage.isBalanceDisplayed());
-        Assert.assertTrue(accountPage.isRecentTransactionsDisplayed());
+
+        ExtentTestManager.getTest().info("Validating balance is displayed");
+        Assert.assertTrue(accountPage.isBalanceDisplayed(), "Balance should be visible");
+
+        ExtentTestManager.getTest().info("Validating transactions table or message is displayed");
+        Assert.assertTrue(accountPage.isRecentTransactionsDisplayed(), "Transactions or message should be visible");
     }
 
     @Test
     public void viewSavingsAccountSummary() throws InterruptedException {
-    	driver.navigate().back();
+    	
+        ExtentTestManager.getTest().info("Viewing SAVINGS account summary");
+        
+        accountPage.navigateToAccountsOverview();
+        
         accountPage.selectAccountByType("SAVINGS");
-        Assert.assertTrue(accountPage.isBalanceDisplayed());
-        Assert.assertTrue(accountPage.isRecentTransactionsDisplayed());
+
+        ExtentTestManager.getTest().info("Validating balance is displayed");
+        Assert.assertTrue(accountPage.isBalanceDisplayed(), "Balance should be visible");
+
+        ExtentTestManager.getTest().info("Validating transactions table or message is displayed");
+        Assert.assertTrue(accountPage.isRecentTransactionsDisplayed(), "Transactions or message should be visible");
     }
 }

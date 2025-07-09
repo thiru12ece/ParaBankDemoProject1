@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.FundsTransferPage;
+import utils.ExtentTestManager;
 
 public class FundsTransferTest extends BaseTest {
 
@@ -17,16 +18,21 @@ public class FundsTransferTest extends BaseTest {
 
     @Test
     public void testValidFundTransfer() {
-    	fundsTransferPage.navigateToTransferFunds();
+        ExtentTestManager.getTest().info("Starting valid fund transfer from 13344 to 13345");
+
         fundsTransferPage.transferFunds("13344", "13345", "100");
-        Assert.assertTrue(fundsTransferPage.isTransferSuccessful(), "Transfer should be successful");
+
+        ExtentTestManager.getTest().info("Validating success message");
+        Assert.assertTrue(fundsTransferPage.isTransferSuccessful(), "✅ Transfer should be successful");
     }
 
     @Test
     public void testInvalidFundTransfer() {
-    	fundsTransferPage.navigateToTransferFunds();
-        // Invalid amount (like empty or negative)
+        ExtentTestManager.getTest().info("Starting invalid fund transfer with non-numeric amount");
+
         fundsTransferPage.transferFunds("13344", "13345", "testFund");
-        Assert.assertTrue(fundsTransferPage.isTransferFailed(), "An internal error has occurred and has been logged.");
+
+        ExtentTestManager.getTest().info("Validating failure message");
+        Assert.assertTrue(fundsTransferPage.isTransferFailed(), "❌ Transfer should fail due to invalid amount");
     }
 }

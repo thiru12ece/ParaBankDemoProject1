@@ -1,14 +1,13 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Parabank Test Suite" parallel="tests" thread-count="4">
+<suite name="Parabank Test Suite">
     <test name="CrossBrowserTests">
         <parameter name="browser" value="chrome"/>
         <classes>
-        <class name="tests.LoginTest"/>
-        <class name="tests.AccountTest"/>
-        <class name="tests.FundsTransferTest"/>
-        <class name="tests.TransactionSearchTest"/>
-        <class name="tests.RequestLoanTest"/>
-        <class name="tests.CustomerSupportTest"/>
+            <class name="tests.LoginTest"/>
+            <class name="tests.AccountTest"/>
+            <class name="tests.FundsTransferTest"/>
+            <class name="tests.TransactionSearchTest"/>
+            <class name="tests.RequestLoanTest"/>
+            <class name="tests.CustomerSupportTest"/>
         </classes>
     </test>
 </suite>
