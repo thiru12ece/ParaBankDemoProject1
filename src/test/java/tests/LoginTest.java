@@ -2,35 +2,26 @@ package tests;
 
 import base.BaseTest;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import pages.LoginPage;
-import utils.ConfigReader;
 import utils.ExtentTestManager;
 
 public class LoginTest extends BaseTest {
 
-    String baseUrl = ConfigReader.getProperty("baseUrl");
-    LoginPage loginPage;
-
-    @Test
-    public void loginWithValidCredentials() {
-        ExtentTestManager.getTest().info("Navigating to: " + baseUrl);
-        driver.get(baseUrl);
+    private LoginPage loginPage;
+    
+    @BeforeClass(alwaysRun = true)
+    public void setUp() {
         loginPage = new LoginPage(driver);
-
-        loginPage.enterUsername("john");
-        loginPage.enterPassword("demo");
-        loginPage.clickLogin();
-
-        ExtentTestManager.getTest().info("Verifying title contains 'Accounts Overview'");
-        Assert.assertTrue(driver.getTitle().contains("ParaBank | Accounts Overview"), "Login should succeed with valid credentials");
     }
+
 
     @Test
     public void loginWithInvalidPassword() {
-        driver.get(baseUrl);
-        loginPage = new LoginPage(driver);
-
+        //logout to perform login test cases
+        loginPage.clickLogOut();
         loginPage.enterUsername("john");
         loginPage.enterPassword("wrongpass");
         loginPage.clickLogin();
@@ -41,9 +32,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void loginWithUnregisteredUser() {
-        driver.get(baseUrl);
-        loginPage = new LoginPage(driver);
-
+     
         loginPage.enterUsername("nonexistentuser");
         loginPage.enterPassword("somepass");
         loginPage.clickLogin();
@@ -53,10 +42,10 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    public void loginWithEmptyFields() {
-        driver.get(baseUrl);
-        loginPage = new LoginPage(driver);
-
+    public void loginWithEmptyFields() throws InterruptedException {
+    	Thread.sleep(2000);
+        loginPage.enterUsername("");
+        loginPage.enterPassword("");
         loginPage.clickLogin();
 
         ExtentTestManager.getTest().info("Verifying error message for empty fields");
@@ -64,10 +53,8 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    public void loginWithInvalidEmailFormat() {
-        driver.get(baseUrl);
-        loginPage = new LoginPage(driver);
-
+    public void loginWithInvalidEmailFormat() throws InterruptedException {
+    	Thread.sleep(2000);
         loginPage.enterUsername("invalid-email");
         loginPage.enterPassword("demo");
         loginPage.clickLogin();
@@ -75,33 +62,37 @@ public class LoginTest extends BaseTest {
         ExtentTestManager.getTest().info("Verifying error message for invalid email format");
         Assert.assertTrue(loginPage.getErrorMessage().contains("could not be verified"), "Login should fail for email-like username");
     }
+    
+    @Test
+    public void loginWithValidCredentials() {
+        loginPage.enterUsername("john");
+        loginPage.enterPassword("demo");
+        loginPage.clickLogin();
+
+        ExtentTestManager.getTest().info("Verifying title contains 'Accounts Overview'");
+        Assert.assertTrue(driver.getTitle().contains("ParaBank | Accounts Overview"), "Login should succeed with valid credentials");
+    }
 
     @Test(enabled = false)
     public void verifyPasswordFieldIsMasked() {
-        driver.get(baseUrl);
-        loginPage = new LoginPage(driver);
 
         Assert.assertEquals(loginPage.getPasswordFieldType(), "password", "Password field should be masked");
     }
 
     @Test(enabled = false)
     public void rememberMeFunctionality() {
-        driver.get(baseUrl);
-        loginPage = new LoginPage(driver);
-
+  
         Assert.assertTrue(loginPage.isUsernameFieldDisplayed(), "Username field should be visible");
     }
 
     @Test(enabled = false)
     public void sessionTimeoutTest() throws InterruptedException {
-        driver.get(baseUrl);
-        loginPage = new LoginPage(driver);
 
         loginPage.enterUsername("john");
         loginPage.enterPassword("demo");
         loginPage.clickLogin();
 
-        Thread.sleep(600000); // Simulate 10 min of inactivity
+        Thread.sleep(600000); // Simulate 10 minutes of inactivity
         driver.navigate().refresh();
 
         Assert.assertTrue(driver.getTitle().contains("ParaBank"), "After session timeout, user should be redirected to login");

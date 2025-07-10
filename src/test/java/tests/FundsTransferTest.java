@@ -11,14 +11,17 @@ public class FundsTransferTest extends BaseTest {
 
     private FundsTransferPage fundsTransferPage;
 
-    @BeforeClass
-    public void setUpPages() {
+    @BeforeClass(alwaysRun = true)
+    public void setUp() {
         fundsTransferPage = new FundsTransferPage(driver);
     }
 
     @Test
     public void testValidFundTransfer() {
+    	
         ExtentTestManager.getTest().info("Starting valid fund transfer from 13344 to 13345");
+        
+        fundsTransferPage.navigateToTransferFunds();
 
         fundsTransferPage.transferFunds("13344", "13345", "100");
 
@@ -29,6 +32,7 @@ public class FundsTransferTest extends BaseTest {
     @Test
     public void testInvalidFundTransfer() {
         ExtentTestManager.getTest().info("Starting invalid fund transfer with non-numeric amount");
+        fundsTransferPage.navigateToTransferFunds();
 
         fundsTransferPage.transferFunds("13344", "13345", "testFund");
 

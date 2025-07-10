@@ -11,14 +11,15 @@ public class TransactionSearchTest extends BaseTest {
 
     private TransactionSearchPage transactionPage;
 
-    @BeforeClass
-    public void setup() {
+    @BeforeClass(alwaysRun = true)
+    public void setUp() {
         transactionPage = new TransactionSearchPage(driver);
     }
 
     @Test
     public void testSearchByTransactionId() {
         ExtentTestManager.getTest().info("Selecting account: 13344");
+        transactionPage.navigateToTransactionSearch();
         transactionPage.selectAccount("13344");
 
         ExtentTestManager.getTest().info("Searching by transaction ID: 12345");
@@ -33,6 +34,7 @@ public class TransactionSearchTest extends BaseTest {
     @Test
     public void testSearchByDate() {
         ExtentTestManager.getTest().info("Selecting account: 13344");
+        transactionPage.navigateToTransactionSearch();
         transactionPage.selectAccount("13344");
 
         ExtentTestManager.getTest().info("Searching by date: 07-04-2025");
@@ -47,6 +49,7 @@ public class TransactionSearchTest extends BaseTest {
     @Test
     public void testSearchByDateRange() {
         ExtentTestManager.getTest().info("Selecting account: 13344");
+        transactionPage.navigateToTransactionSearch();
         transactionPage.selectAccount("13344");
 
         ExtentTestManager.getTest().info("Searching by date range: 07-01-2025 to 07-05-2025");
@@ -61,6 +64,7 @@ public class TransactionSearchTest extends BaseTest {
     @Test
     public void testSearchByAmount() {
         ExtentTestManager.getTest().info("Selecting account: 13344");
+        transactionPage.navigateToTransactionSearch();
         transactionPage.selectAccount("13344");
 
         ExtentTestManager.getTest().info("Searching by amount: 100");

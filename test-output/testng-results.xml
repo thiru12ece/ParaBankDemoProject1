@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="0" failed="0" skipped="19">
+<testng-results ignored="0" total="19" passed="14" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-09T20:29:04 IST" name="Parabank Test Suite" finished-at="2025-07-09T20:29:04 IST" duration-ms="203">
+  <suite started-at="2025-07-10T15:02:53 IST" name="Parabank Test Suite" finished-at="2025-07-10T15:04:20 IST" duration-ms="86446">
     <groups>
     </groups>
-    <test started-at="2025-07-09T20:29:04 IST" name="CrossBrowserTests" finished-at="2025-07-09T20:29:04 IST" duration-ms="203">
+    <test started-at="2025-07-10T15:02:53 IST" name="CrossBrowserTests" finished-at="2025-07-10T15:04:20 IST" duration-ms="86446">
       <class name="tests.RequestLoanTest">
-        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="startLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:12 IST" name="startLog" finished-at="2025-07-10T15:04:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startLog -->
-        <test-method is-config="true" signature="setUpPages()[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="setUpPages" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:12 IST" name="setUp" finished-at="2025-07-10T15:04:12 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpPages -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:12 IST" name="createExtentTest" finished-at="2025-07-10T15:04:12 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,56 +26,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method is-config="true" signature="goToRequestLoanPage()[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="goToRequestLoanPage" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToRequestLoanPage -->
-        <test-method signature="testLoanExceedingLimit()[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="testLoanExceedingLimit" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="testLoanExceedingLimit()[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:12 IST" name="testLoanExceedingLimit" finished-at="2025-07-10T15:04:13 IST" duration-ms="1055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoanExceedingLimit -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:13 IST" name="captureTestResult" finished-at="2025-07-10T15:04:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoanExceedingLimit status=SUCCESS method=RequestLoanTest.testLoanExceedingLimit()[pri:0, instance:tests.RequestLoanTest@2925bf5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method signature="testMissingLoanDetails()[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:13 IST" name="testMissingLoanDetails" finished-at="2025-07-10T15:04:14 IST" duration-ms="833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMissingLoanDetails -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:13 IST" name="createExtentTest" finished-at="2025-07-10T15:04:13 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,56 +56,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method is-config="true" signature="goToRequestLoanPage()[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="goToRequestLoanPage" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToRequestLoanPage -->
-        <test-method signature="testMissingLoanDetails()[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="testMissingLoanDetails" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMissingLoanDetails -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:14 IST" name="createExtentTest" finished-at="2025-07-10T15:04:14 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,62 +67,39 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method is-config="true" signature="goToRequestLoanPage()[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="goToRequestLoanPage" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:14 IST" name="captureTestResult" finished-at="2025-07-10T15:04:14 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMissingLoanDetails status=SUCCESS method=RequestLoanTest.testMissingLoanDetails()[pri:0, instance:tests.RequestLoanTest@2925bf5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToRequestLoanPage -->
-        <test-method signature="testValidLoanRequest()[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="testValidLoanRequest" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        </test-method> <!-- captureTestResult -->
+        <test-method signature="testValidLoanRequest()[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:14 IST" name="testValidLoanRequest" finished-at="2025-07-10T15:04:15 IST" duration-ms="1057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLoanRequest -->
-        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.RequestLoanTest@45c7e403]" started-at="2025-07-09T20:29:04 IST" name="endLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:15 IST" name="captureTestResult" finished-at="2025-07-10T15:04:15 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLoanRequest status=SUCCESS method=RequestLoanTest.testValidLoanRequest()[pri:0, instance:tests.RequestLoanTest@2925bf5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.RequestLoanTest@2925bf5b]" started-at="2025-07-10T15:04:15 IST" name="endLog" finished-at="2025-07-10T15:04:15 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endLog -->
       </class> <!-- tests.RequestLoanTest -->
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="setupSuite(java.lang.String)[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:28:11 IST" name="setupSuite" finished-at="2025-07-09T20:29:03 IST" duration-ms="52758" status="FAIL">
+        <test-method is-config="true" signature="setupSuite(java.lang.String)[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:02:36 IST" name="setupSuite" finished-at="2025-07-10T15:02:53 IST" duration-ms="16373" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -209,98 +107,69 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:03 IST" name="startExtentReport" finished-at="2025-07-09T20:29:04 IST" depends-on-methods="base.TestBaseSuite.setupSuite" duration-ms="354" status="PASS">
+        <test-method is-config="true" signature="startExtentReport()[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:02:53 IST" name="startExtentReport" finished-at="2025-07-10T15:02:53 IST" depends-on-methods="base.TestBaseSuite.setupSuite" duration-ms="430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtentReport -->
-        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="startLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:02:53 IST" name="startLog" finished-at="2025-07-10T15:02:53 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startLog -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:02:53 IST" name="setUp" finished-at="2025-07-10T15:02:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:02:53 IST" name="createExtentTest" finished-at="2025-07-10T15:02:53 IST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.LoginTest.loginWithEmptyFields()]]>
+                <![CDATA[public void tests.LoginTest.loginWithEmptyFields() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="loginWithEmptyFields()[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="loginWithEmptyFields" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
+        <test-method signature="loginWithEmptyFields()[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:02:53 IST" name="loginWithEmptyFields" finished-at="2025-07-10T15:03:05 IST" duration-ms="12034" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62600/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4225d8666eaf70ed75905ff961b54500]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62600/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4225d8666eaf70ed75905ff961b54500
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
+at pages.LoginPage.enterUsername(LoginPage.java:33)
+at tests.LoginTest.loginWithEmptyFields(LoginTest.java:47)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
 at org.testng.SuiteRunner.run(SuiteRunner.java:312)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -317,35 +186,65 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithEmptyFields -->
-        <test-method signature="loginWithInvalidEmailFormat()[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="loginWithInvalidEmailFormat" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:05 IST" name="captureTestResult" finished-at="2025-07-10T15:03:06 IST" duration-ms="307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithEmptyFields status=FAILURE method=LoginTest.loginWithEmptyFields()[pri:0, instance:tests.LoginTest@3c9754d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:06 IST" name="createExtentTest" finished-at="2025-07-10T15:03:06 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginTest.loginWithInvalidEmailFormat() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createExtentTest -->
+        <test-method signature="loginWithInvalidEmailFormat()[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:06 IST" name="loginWithInvalidEmailFormat" finished-at="2025-07-10T15:03:18 IST" duration-ms="12513" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62600/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4225d8666eaf70ed75905ff961b54500]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62600/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4225d8666eaf70ed75905ff961b54500
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
+at pages.LoginPage.enterUsername(LoginPage.java:33)
+at tests.LoginTest.loginWithInvalidEmailFormat(LoginTest.java:58)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
 at org.testng.SuiteRunner.run(SuiteRunner.java:312)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -362,18 +261,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInvalidEmailFormat -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:18 IST" name="captureTestResult" finished-at="2025-07-10T15:03:18 IST" duration-ms="232" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.LoginTest.loginWithInvalidEmailFormat()]]>
+                <![CDATA[[TestResult name=loginWithInvalidEmailFormat status=FAILURE method=LoginTest.loginWithInvalidEmailFormat()[pri:0, instance:tests.LoginTest@3c9754d8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createExtentTest -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- captureTestResult -->
+        <test-method signature="loginWithInvalidPassword()[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:18 IST" name="loginWithInvalidPassword" finished-at="2025-07-10T15:03:30 IST" duration-ms="11905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidPassword -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:18 IST" name="createExtentTest" finished-at="2025-07-10T15:03:18 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -384,52 +287,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="loginWithInvalidPassword()[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="loginWithInvalidPassword" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:30 IST" name="captureTestResult" finished-at="2025-07-10T15:03:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithInvalidPassword status=SUCCESS method=LoginTest.loginWithInvalidPassword()[pri:0, instance:tests.LoginTest@3c9754d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInvalidPassword -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- captureTestResult -->
+        <test-method signature="loginWithUnregisteredUser()[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:30 IST" name="loginWithUnregisteredUser" finished-at="2025-07-10T15:03:41 IST" duration-ms="10798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithUnregisteredUser -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:30 IST" name="createExtentTest" finished-at="2025-07-10T15:03:30 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -440,97 +313,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="loginWithUnregisteredUser()[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="loginWithUnregisteredUser" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:41 IST" name="captureTestResult" finished-at="2025-07-10T15:03:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithUnregisteredUser status=SUCCESS method=LoginTest.loginWithUnregisteredUser()[pri:0, instance:tests.LoginTest@3c9754d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithUnregisteredUser -->
-        <test-method signature="loginWithValidCredentials()[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="loginWithValidCredentials" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        </test-method> <!-- captureTestResult -->
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:41 IST" name="loginWithValidCredentials" finished-at="2025-07-10T15:03:52 IST" duration-ms="10985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:41 IST" name="createExtentTest" finished-at="2025-07-10T15:03:41 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -541,29 +339,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="endLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:52 IST" name="captureTestResult" finished-at="2025-07-10T15:03:52 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithValidCredentials status=SUCCESS method=LoginTest.loginWithValidCredentials()[pri:0, instance:tests.LoginTest@3c9754d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:03:52 IST" name="endLog" finished-at="2025-07-10T15:03:52 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endLog -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:04 IST" name="flushReport" finished-at="2025-07-09T20:29:05 IST" duration-ms="558" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:04:20 IST" name="flushReport" finished-at="2025-07-10T15:04:20 IST" duration-ms="600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->
-        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:tests.LoginTest@198b6731]" started-at="2025-07-09T20:29:05 IST" name="teardownSuite" finished-at="2025-07-09T20:29:05 IST" depends-on-methods="base.BaseTest.flushReport" duration-ms="297" status="PASS">
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:tests.LoginTest@3c9754d8]" started-at="2025-07-10T15:04:20 IST" name="teardownSuite" finished-at="2025-07-10T15:04:21 IST" depends-on-methods="base.BaseTest.flushReport" duration-ms="355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownSuite -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.CustomerSupportTest">
-        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-09T20:29:04 IST" name="startLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="2" status="PASS">
+        <test-method signature="testSubmitFormWithEmptyFields()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:15 IST" name="testSubmitFormWithEmptyFields" finished-at="2025-07-10T15:04:16 IST" duration-ms="1468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubmitFormWithEmptyFields -->
+        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:15 IST" name="startLog" finished-at="2025-07-10T15:04:15 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startLog -->
-        <test-method is-config="true" signature="setUpPages()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-09T20:29:04 IST" name="setUpPages" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpPages -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:15 IST" name="createExtentTest" finished-at="2025-07-10T15:04:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -574,52 +383,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="testSubmitFormWithEmptyFields()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-09T20:29:04 IST" name="testSubmitFormWithEmptyFields" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:15 IST" name="setUp" finished-at="2025-07-10T15:04:15 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSubmitFormWithEmptyFields -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:16 IST" name="captureTestResult" finished-at="2025-07-10T15:04:17 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSubmitFormWithEmptyFields status=SUCCESS method=CustomerSupportTest.testSubmitFormWithEmptyFields()[pri:0, instance:tests.CustomerSupportTest@710f4dc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:17 IST" name="createExtentTest" finished-at="2025-07-10T15:04:17 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -630,52 +409,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="testSubmitFormWithValidDetails()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-09T20:29:04 IST" name="testSubmitFormWithValidDetails" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="testSubmitFormWithValidDetails()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:17 IST" name="testSubmitFormWithValidDetails" finished-at="2025-07-10T15:04:18 IST" duration-ms="1608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSubmitFormWithValidDetails -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:18 IST" name="captureTestResult" finished-at="2025-07-10T15:04:18 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSubmitFormWithValidDetails status=SUCCESS method=CustomerSupportTest.testSubmitFormWithValidDetails()[pri:0, instance:tests.CustomerSupportTest@710f4dc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:18 IST" name="createExtentTest" finished-at="2025-07-10T15:04:18 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -686,111 +435,36 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="testVerifySuccessMessage()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-09T20:29:04 IST" name="testVerifySuccessMessage" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="testVerifySuccessMessage()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:18 IST" name="testVerifySuccessMessage" finished-at="2025-07-10T15:04:20 IST" duration-ms="1541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVerifySuccessMessage -->
-        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-09T20:29:04 IST" name="endLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:20 IST" name="captureTestResult" finished-at="2025-07-10T15:04:20 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testVerifySuccessMessage status=SUCCESS method=CustomerSupportTest.testVerifySuccessMessage()[pri:0, instance:tests.CustomerSupportTest@710f4dc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.CustomerSupportTest@710f4dc7]" started-at="2025-07-10T15:04:20 IST" name="endLog" finished-at="2025-07-10T15:04:20 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endLog -->
       </class> <!-- tests.CustomerSupportTest -->
       <class name="tests.TransactionSearchTest">
-        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.TransactionSearchTest@b3ca52e]" started-at="2025-07-09T20:29:04 IST" name="startLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:08 IST" name="startLog" finished-at="2025-07-10T15:04:08 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startLog -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TransactionSearchTest@b3ca52e]" started-at="2025-07-09T20:29:04 IST" name="setup" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:08 IST" name="setUp" finished-at="2025-07-10T15:04:08 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testSearchByAmount()[pri:0, instance:tests.TransactionSearchTest@b3ca52e]" started-at="2025-07-09T20:29:04 IST" name="testSearchByAmount" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchByAmount -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.TransactionSearchTest@b3ca52e]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:08 IST" name="createExtentTest" finished-at="2025-07-10T15:04:08 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -801,7 +475,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.TransactionSearchTest@b3ca52e]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        <test-method signature="testSearchByAmount()[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:08 IST" name="testSearchByAmount" finished-at="2025-07-10T15:04:09 IST" duration-ms="1398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchByAmount -->
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:09 IST" name="captureTestResult" finished-at="2025-07-10T15:04:09 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchByAmount status=SUCCESS method=TransactionSearchTest.testSearchByAmount()[pri:0, instance:tests.TransactionSearchTest@302552ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method signature="testSearchByDate()[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:09 IST" name="testSearchByDate" finished-at="2025-07-10T15:04:11 IST" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchByDate -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:09 IST" name="createExtentTest" finished-at="2025-07-10T15:04:09 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -812,35 +505,72 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="testSearchByDate()[pri:0, instance:tests.TransactionSearchTest@b3ca52e]" started-at="2025-07-09T20:29:04 IST" name="testSearchByDate" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:11 IST" name="captureTestResult" finished-at="2025-07-10T15:04:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchByDate status=SUCCESS method=TransactionSearchTest.testSearchByDate()[pri:0, instance:tests.TransactionSearchTest@302552ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method signature="testSearchByDateRange()[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:11 IST" name="testSearchByDateRange" finished-at="2025-07-10T15:04:11 IST" duration-ms="511" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div//input[@id='fromDate']"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
+Command: [4225d8666eaf70ed75905ff961b54500, findElement {using=xpath, value=//div//input[@id='fromDate']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62600/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4225d8666eaf70ed75905ff961b54500]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div//input[@id='fromDate']"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
+Command: [4225d8666eaf70ed75905ff961b54500, findElement {using=xpath, value=//div//input[@id='fromDate']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62600/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4225d8666eaf70ed75905ff961b54500
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at pages.TransactionSearchPage.searchByDateRange(TransactionSearchPage.java:60)
+at tests.TransactionSearchTest.testSearchByDateRange(TransactionSearchTest.java:56)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
 at org.testng.SuiteRunner.run(SuiteRunner.java:312)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -853,11 +583,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchByDate -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.TransactionSearchTest@b3ca52e]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testSearchByDateRange -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:11 IST" name="createExtentTest" finished-at="2025-07-10T15:04:11 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -868,52 +598,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="testSearchByDateRange()[pri:0, instance:tests.TransactionSearchTest@b3ca52e]" started-at="2025-07-09T20:29:04 IST" name="testSearchByDateRange" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:11 IST" name="captureTestResult" finished-at="2025-07-10T15:04:11 IST" duration-ms="219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchByDateRange status=FAILURE method=TransactionSearchTest.testSearchByDateRange()[pri:0, instance:tests.TransactionSearchTest@302552ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchByDateRange -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.TransactionSearchTest@b3ca52e]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- captureTestResult -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:11 IST" name="createExtentTest" finished-at="2025-07-10T15:04:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -924,35 +620,61 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="testSearchByTransactionId()[pri:0, instance:tests.TransactionSearchTest@b3ca52e]" started-at="2025-07-09T20:29:04 IST" name="testSearchByTransactionId" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="testSearchByTransactionId()[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:11 IST" name="testSearchByTransactionId" finished-at="2025-07-10T15:04:12 IST" duration-ms="507" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='transactionId']"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
+Command: [4225d8666eaf70ed75905ff961b54500, findElement {using=xpath, value=//input[@id='transactionId']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62600/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4225d8666eaf70ed75905ff961b54500]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='transactionId']"}
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.21.0', revision: '79ed462ef4'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
+Command: [4225d8666eaf70ed75905ff961b54500, findElement {using=xpath, value=//input[@id='transactionId']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62600}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62600/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4225d8666eaf70ed75905ff961b54500
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at pages.TransactionSearchPage.searchByTransactionId(TransactionSearchPage.java:48)
+at tests.TransactionSearchTest.testSearchByTransactionId(TransactionSearchTest.java:26)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
 at org.testng.SuiteRunner.run(SuiteRunner.java:312)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -965,70 +687,36 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchByTransactionId -->
-        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.TransactionSearchTest@b3ca52e]" started-at="2025-07-09T20:29:04 IST" name="endLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:12 IST" name="captureTestResult" finished-at="2025-07-10T15:04:12 IST" duration-ms="220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSearchByTransactionId status=FAILURE method=TransactionSearchTest.testSearchByTransactionId()[pri:0, instance:tests.TransactionSearchTest@302552ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.TransactionSearchTest@302552ec]" started-at="2025-07-10T15:04:12 IST" name="endLog" finished-at="2025-07-10T15:04:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endLog -->
       </class> <!-- tests.TransactionSearchTest -->
       <class name="tests.AccountTest">
-        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.AccountTest@4e08711f]" started-at="2025-07-09T20:29:04 IST" name="startLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.AccountTest@bcec361]" started-at="2025-07-10T15:03:52 IST" name="startLog" finished-at="2025-07-10T15:03:52 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startLog -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AccountTest@4e08711f]" started-at="2025-07-09T20:29:04 IST" name="setUp" finished-at="2025-07-09T20:29:04 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.AccountTest@bcec361]" started-at="2025-07-10T15:03:52 IST" name="setUp" finished-at="2025-07-10T15:03:52 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="viewCheckingAccountSummary()[pri:0, instance:tests.AccountTest@4e08711f]" started-at="2025-07-09T20:29:04 IST" name="viewCheckingAccountSummary" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- viewCheckingAccountSummary -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.AccountTest@4e08711f]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.AccountTest@bcec361]" started-at="2025-07-10T15:03:52 IST" name="createExtentTest" finished-at="2025-07-10T15:03:52 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1039,35 +727,46 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="viewSavingsAccountSummary()[pri:0, instance:tests.AccountTest@4e08711f]" started-at="2025-07-09T20:29:04 IST" name="viewSavingsAccountSummary" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="viewCheckingAccountSummary()[pri:0, instance:tests.AccountTest@bcec361]" started-at="2025-07-10T15:03:52 IST" name="viewCheckingAccountSummary" finished-at="2025-07-10T15:03:56 IST" duration-ms="3575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCheckingAccountSummary -->
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.AccountTest@bcec361]" started-at="2025-07-10T15:03:56 IST" name="captureTestResult" finished-at="2025-07-10T15:03:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=viewCheckingAccountSummary status=SUCCESS method=AccountTest.viewCheckingAccountSummary()[pri:0, instance:tests.AccountTest@bcec361] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method signature="viewSavingsAccountSummary()[pri:0, instance:tests.AccountTest@bcec361]" started-at="2025-07-10T15:03:56 IST" name="viewSavingsAccountSummary" finished-at="2025-07-10T15:04:04 IST" duration-ms="8599" status="FAIL">
+          <exception class="java.util.NoSuchElementException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
+              <![CDATA[No account found with type: SAVINGS]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
+              <![CDATA[java.util.NoSuchElementException: No account found with type: SAVINGS
+at pages.AccountPage.selectAccountByType(AccountPage.java:61)
+at tests.AccountTest.viewSavingsAccountSummary(AccountTest.java:42)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
 at org.testng.SuiteRunner.run(SuiteRunner.java:312)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -1080,11 +779,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.util.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- viewSavingsAccountSummary -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.AccountTest@4e08711f]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.AccountTest@bcec361]" started-at="2025-07-10T15:03:56 IST" name="createExtentTest" finished-at="2025-07-10T15:03:56 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1095,21 +794,32 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.AccountTest@4e08711f]" started-at="2025-07-09T20:29:04 IST" name="endLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.AccountTest@bcec361]" started-at="2025-07-10T15:04:04 IST" name="captureTestResult" finished-at="2025-07-10T15:04:05 IST" duration-ms="279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=viewSavingsAccountSummary status=FAILURE method=AccountTest.viewSavingsAccountSummary()[pri:0, instance:tests.AccountTest@bcec361] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.AccountTest@bcec361]" started-at="2025-07-10T15:04:05 IST" name="endLog" finished-at="2025-07-10T15:04:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endLog -->
       </class> <!-- tests.AccountTest -->
       <class name="tests.FundsTransferTest">
-        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.FundsTransferTest@279fedbd]" started-at="2025-07-09T20:29:04 IST" name="startLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="startLog()[pri:0, instance:tests.FundsTransferTest@26794848]" started-at="2025-07-10T15:04:05 IST" name="startLog" finished-at="2025-07-10T15:04:05 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startLog -->
-        <test-method is-config="true" signature="setUpPages()[pri:0, instance:tests.FundsTransferTest@279fedbd]" started-at="2025-07-09T20:29:04 IST" name="setUpPages" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.FundsTransferTest@26794848]" started-at="2025-07-10T15:04:05 IST" name="setUp" finished-at="2025-07-10T15:04:05 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpPages -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.FundsTransferTest@279fedbd]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.FundsTransferTest@26794848]" started-at="2025-07-10T15:04:05 IST" name="createExtentTest" finished-at="2025-07-10T15:04:05 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1120,97 +830,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method signature="testInvalidFundTransfer()[pri:0, instance:tests.FundsTransferTest@279fedbd]" started-at="2025-07-09T20:29:04 IST" name="testInvalidFundTransfer" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="testInvalidFundTransfer()[pri:0, instance:tests.FundsTransferTest@26794848]" started-at="2025-07-10T15:04:05 IST" name="testInvalidFundTransfer" finished-at="2025-07-10T15:04:06 IST" duration-ms="1778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidFundTransfer -->
-        <test-method signature="testValidFundTransfer()[pri:0, instance:tests.FundsTransferTest@279fedbd]" started-at="2025-07-09T20:29:04 IST" name="testValidFundTransfer" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\saran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61319}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61319/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32aa15fd150adbbf2d59c07f44d27e4e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at pages.LoginPage.enterUsername(LoginPage.java:32)
-at pages.LoginPage.login(LoginPage.java:26)
-at base.TestBaseSuite.setupSuite(TestBaseSuite.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.FundsTransferTest@26794848]" started-at="2025-07-10T15:04:06 IST" name="captureTestResult" finished-at="2025-07-10T15:04:06 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidFundTransfer status=SUCCESS method=FundsTransferTest.testInvalidFundTransfer()[pri:0, instance:tests.FundsTransferTest@26794848] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method signature="testValidFundTransfer()[pri:0, instance:tests.FundsTransferTest@26794848]" started-at="2025-07-10T15:04:06 IST" name="testValidFundTransfer" finished-at="2025-07-10T15:04:08 IST" duration-ms="1416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidFundTransfer -->
-        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.FundsTransferTest@279fedbd]" started-at="2025-07-09T20:29:04 IST" name="createExtentTest" finished-at="2025-07-09T20:29:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="createExtentTest(java.lang.reflect.Method)[pri:0, instance:tests.FundsTransferTest@26794848]" started-at="2025-07-10T15:04:06 IST" name="createExtentTest" finished-at="2025-07-10T15:04:06 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -1221,7 +860,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createExtentTest -->
-        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.FundsTransferTest@279fedbd]" started-at="2025-07-09T20:29:04 IST" name="endLog" finished-at="2025-07-09T20:29:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="captureTestResult(org.testng.ITestResult)[pri:0, instance:tests.FundsTransferTest@26794848]" started-at="2025-07-10T15:04:08 IST" name="captureTestResult" finished-at="2025-07-10T15:04:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidFundTransfer status=SUCCESS method=FundsTransferTest.testValidFundTransfer()[pri:0, instance:tests.FundsTransferTest@26794848] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureTestResult -->
+        <test-method is-config="true" signature="endLog()[pri:0, instance:tests.FundsTransferTest@26794848]" started-at="2025-07-10T15:04:08 IST" name="endLog" finished-at="2025-07-10T15:04:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endLog -->

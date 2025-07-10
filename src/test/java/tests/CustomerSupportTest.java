@@ -11,14 +11,15 @@ public class CustomerSupportTest extends BaseTest {
 
     private CustomerSupportPage supportPage;
 
-    @BeforeClass
-    public void setUpPages() {
+    @BeforeClass(alwaysRun = true)
+    public void setUp() {
         supportPage = new CustomerSupportPage(driver);
     }
 
     @Test
     public void testSubmitFormWithValidDetails() {
         ExtentTestManager.getTest().info("Submitting form with valid data");
+        supportPage.navigateToCustomerSupport();
         supportPage.submitSupportForm("John Doe", "john@example.com", "Loan Issue", "I need help with my loan status.");
 
         Assert.assertTrue(
@@ -30,6 +31,7 @@ public class CustomerSupportTest extends BaseTest {
     @Test
     public void testSubmitFormWithEmptyFields() {
         ExtentTestManager.getTest().info("Submitting form with empty fields");
+        supportPage.navigateToCustomerSupport();
         supportPage.submitSupportForm("", "", "", "");
 
         Assert.assertTrue(
@@ -41,6 +43,7 @@ public class CustomerSupportTest extends BaseTest {
     @Test
     public void testVerifySuccessMessage() {
         ExtentTestManager.getTest().info("Submitting form for password reset request");
+        supportPage.navigateToCustomerSupport();
         supportPage.submitSupportForm("Jane", "jane@example.com", "Password Reset", "I forgot my password.");
 
         Assert.assertTrue(

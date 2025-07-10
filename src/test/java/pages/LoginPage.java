@@ -13,6 +13,7 @@ public class LoginPage {
     private By usernameField = By.name("username");
     private By passwordField = By.name("password");
     private By loginButton = By.cssSelector("input[type='submit']");
+    private By logoutButton = By.xpath("//a[contains(text(), 'Log Out')]");
     private By errorMessage = By.cssSelector("p.error");
     private By accountOverviewHeader = By.xpath("//h1[text()='Accounts Overview']");
 
@@ -49,6 +50,9 @@ public class LoginPage {
         } catch (Exception e) {
             // Let test code handle login failure
         }
+    }
+    public void clickLogOut() {
+        wait.until(ExpectedConditions.elementToBeClickable(logoutButton)).click();
     }
 
     public String getErrorMessage() {

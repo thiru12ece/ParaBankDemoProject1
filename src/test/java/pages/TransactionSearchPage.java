@@ -11,13 +11,14 @@ public class TransactionSearchPage {
 
     private WebDriver driver;
     private WebDriverWait wait;
-
+  
+    private By transactionsLink = By.xpath("//a[contains(text(),'Find Transactions')]");
     private By accountDropdown = By.xpath("//select[@id='accountId']");
     private By transactionIdInput = By.xpath("//input[@id='transactionId']");
     private By transactionDateInput = By.xpath("//input[@id='transactionDate']");
     
-    private By fromDateInput = By.xpath("//input[@id='fromDate']");
-    private By toDateInput = By.xpath("//input[@id='toDate']");
+    private By fromDateInput = By.xpath("//div//input[@id='fromDate']");
+    private By toDateInput = By.xpath("//div//input[@id='toDate']");
     private By amountInput = By.xpath("//input[@id='amount']");
 
     private By findtransactionByIdBtn = By.xpath("//button[@id='findById']");
@@ -31,6 +32,12 @@ public class TransactionSearchPage {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
+    
+    public void navigateToTransactionSearch() {
+        wait.until(ExpectedConditions.elementToBeClickable(transactionsLink)).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(transactionsLink));
+    }
+
 
     public void selectAccount(String accountNumber) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(accountDropdown));
