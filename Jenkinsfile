@@ -58,7 +58,6 @@ pipeline {
                         Regards,<br>Jenkins""",
                 mimeType: 'text/html',
                 to: 'thiru12ece@gmail.com',
-                attachmentsPattern: "${REPORT_DIR}/${REPORT_FILE}"  // --> only ExtentReport.html
             )
         }
     }
