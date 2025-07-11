@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3'    // Must match Jenkins Maven tool name
-        jdk 'JDK 17'       // Optional: if managed by Jenkins
+        maven 'Maven 3'    // Make sure this matches Jenkins Maven tool name
+        jdk 'JDK 17'       // Optional: use if Jenkins manages JDK
     }
 
     environment {
@@ -43,21 +43,23 @@ pipeline {
         }
     }
 
-   post {
-    always {
-        echo 'Pipeline completed. Reports published.'
-        bat "dir /s /b ${REPORT_DIR}\\ExtentReport.html"
+    post {
+        always {
+            echo 'Pipeline completed. Reports published.'
 
-        emailext(
-            subject: "Automation Test Report - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-            body: """Hi Team,<br><br>
-                    Please find the report for <b>${env.JOB_NAME}</b> build #${env.BUILD_NUMBER}.<br>
-                    <a href="${env.BUILD_URL}HTML_Report/">View Report</a><br><br>
-                    Regards,<br>Jenkins""",
-            mimeType: 'text/html',
-            to: 'thiru12ece@gmail.com',
-            attachmentsPattern: 'test-output/ExtentReport.html'
-        )
+            // Verify the file exists
+            bat "dir /s /b ${REPORT_DIR}\\${REPORT_FILE}"
+
+            // Send email with only ExtentReport.html attached
+            emailext(
+                subject: "Automation Test Report - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: """Hi Team,<br><br>
+                        Please find attached the automation test report for <b>${env.JOB_NAME}</b> build #${env.BUILD_NUMBER}.<br><br>
+                        Regards,<br>Jenkins""",
+                mimeType: 'text/html',
+                to: 'thiru12ece@gmail.com',
+                attachmentsPattern: "${REPORT_DIR}/${REPORT_FILE}"  // --> only ExtentReport.html
+            )
+        }
     }
-}
 }
