@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3'
-        jdk 'JDK 17'
+        maven 'Maven 3'    // Must match Jenkins Maven tool name
+        jdk 'JDK 17'       // Optional: if managed by Jenkins
     }
 
     environment {
@@ -46,6 +46,20 @@ pipeline {
     post {
         always {
             echo 'Pipeline completed. Reports published.'
+
+            // Publish TestNG test results if present
+            junit 'test-output/testng-results.xml'
+
+            // Email report (ensure Email Extension plugin is configured)
+            emailext(
+                subject: "Automation Test Report - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: """Hi Team,<br><br>
+                        Please find attached the Extent Report for <b>${env.JOB_NAME}</b> build #${env.BUILD_NUMBER}.<br><br>
+                        Regards,<br>Jenkins""",
+                mimeType: 'text/html',
+                to: 'thiru12ece@gmail.com',
+                attachmentsPattern: "${REPORT_DIR}/${REPORT_FILE}"
+            )
         }
     }
 }
