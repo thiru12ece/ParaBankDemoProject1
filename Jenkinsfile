@@ -54,7 +54,7 @@ pipeline {
                         Please find attached the automation test report for <b>${env.JOB_NAME}</b> build #${env.BUILD_NUMBER}.<br><br>
                         Regards,<br>Jenkins""",
                 mimeType: 'text/html',
-                to: 'thiru12ece@gmail.com',
+                to: 'saranyaa1994@gmail.com',
             )
         }
     }
