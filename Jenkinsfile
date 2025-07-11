@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3'      // Must match Jenkins tool config name
-        jdk 'JDK 17'         // Optional, if using Jenkins-managed JDK
+        maven 'Maven 3'
+        jdk 'JDK 17'
     }
 
     environment {
@@ -35,11 +35,17 @@ pipeline {
                 ])
             }
         }
+
+        stage('Archive Report') {
+            steps {
+                archiveArtifacts artifacts: "${REPORT_DIR}/${REPORT_FILE}", onlyIfSuccessful: true
+            }
+        }
     }
 
     post {
         always {
-            junit 'test-output/ExtentReport.xml'
+            junit 'test-output/testng-results.xml' // if you're using TestNG
         }
     }
 }
