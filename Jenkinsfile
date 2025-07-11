@@ -47,15 +47,19 @@ pipeline {
         always {
             echo 'Pipeline completed. Reports published.'
 
-            // Email report (ensure Email Extension plugin is configured)
+            // Debug: List files in report directory
+            bat "dir ${REPORT_DIR}"
+
+            // Email with report attachment
             emailext(
                 subject: "Automation Test Report - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """Hi Team,<br><br>
-                        Please find attached the Extent Report for <b>${env.JOB_NAME}</b> build #${env.BUILD_NUMBER}.<br><br>
+                        Please find the automation test report for <b>${env.JOB_NAME}</b> build #${env.BUILD_NUMBER}.<br><br>
+                        <a href="${env.BUILD_URL}HTML_Report/">Click here</a> to view the HTML report.<br><br>
                         Regards,<br>Jenkins""",
                 mimeType: 'text/html',
                 to: 'thiru12ece@gmail.com',
-                attachmentsPattern: "${REPORT_DIR}/${REPORT_FILE}"
+                attachmentsPattern: "**/${REPORT_DIR}/${REPORT_FILE}"
             )
         }
     }
