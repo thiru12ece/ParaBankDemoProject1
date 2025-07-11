@@ -47,9 +47,6 @@ pipeline {
         always {
             echo 'Pipeline completed. Reports published.'
 
-            // Publish TestNG test results if present
-            junit 'test-output/testng-results.xml'
-
             // Email report (ensure Email Extension plugin is configured)
             emailext(
                 subject: "Automation Test Report - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
