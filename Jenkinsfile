@@ -45,7 +45,7 @@ pipeline {
 
     post {
         always {
-            echo 'Pipeline completed. Reports published.
+            echo 'Pipeline completed. Reports published.'
         }
     }
 }
