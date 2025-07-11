@@ -47,9 +47,6 @@ pipeline {
         always {
             echo 'Pipeline completed. Reports published.'
 
-            // Verify the file exists
-            bat "dir /s /b ${REPORT_DIR}\\${REPORT_FILE}"
-
             // Send email with only ExtentReport.html attached
             emailext(
                 subject: "Automation Test Report - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
