@@ -18,7 +18,7 @@ public class LoginTest extends BaseTest {
     }
 
 
-    @Test
+    @Test(priority = 1)
     public void loginWithInvalidPassword() {
         //logout to perform login test cases
         loginPage.clickLogOut();
@@ -30,7 +30,7 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(loginPage.getErrorMessage().contains("could not be verified"), "Error message should indicate failed login");
     }
 
-    @Test
+    @Test(priority = 2)
     public void loginWithUnregisteredUser() {
      
         loginPage.enterUsername("nonexistentuser");
@@ -41,7 +41,7 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(loginPage.getErrorMessage().contains("could not be verified"), "Error message should indicate unknown user");
     }
 
-    @Test
+    @Test(priority = 3)
     public void loginWithEmptyFields() throws InterruptedException {
     	Thread.sleep(2000);
         loginPage.enterUsername("");
@@ -52,7 +52,7 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(loginPage.getErrorMessage().contains("Please enter a username and password."), "Should prompt to enter credentials");
     }
 
-    @Test
+    @Test(priority = 4)
     public void loginWithInvalidEmailFormat() throws InterruptedException {
     	Thread.sleep(2000);
         loginPage.enterUsername("invalid-email");
@@ -63,7 +63,7 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(loginPage.getErrorMessage().contains("could not be verified"), "Login should fail for email-like username");
     }
     
-    @Test
+    @Test(priority = 5)
     public void loginWithValidCredentials() {
         loginPage.enterUsername("john");
         loginPage.enterPassword("demo");
